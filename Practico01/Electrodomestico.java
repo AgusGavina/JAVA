@@ -1,11 +1,11 @@
 package Practico01;
 public class Electrodomestico {
     //Atributos
-    String nombre;
-    double precioBase;
-    String color;
-    int consumoEnergetico;
-    double peso;
+    private String nombre;
+    private double precioBase;
+    private String color;
+    private int consumoEnergetico;
+    private double peso;
     //Valores por defecto
     public Electrodomestico(){
         color = "gris plata";
