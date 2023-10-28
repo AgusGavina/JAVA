@@ -1,4 +1,4 @@
-package Practico01;
+package Practico01.Ejercicio3;
 
 public class Rectangulo {
     private int c1;

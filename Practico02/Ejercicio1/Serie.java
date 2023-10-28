@@ -7,6 +7,7 @@ public class Serie {
     private String descripcion;
     private String creador;
     private String genero;
+    public Temporada arrTemporadas[] = new Temporada[this.cantTemp];
 
     //Valores por defecto
     public Serie(){
@@ -15,6 +16,7 @@ public class Serie {
         this.descripcion = "Descripcion de la serie";
         this.creador = "Nombre del creador";
         this.genero = "Genero de la serie";
+        generarTemporadas(this.cantTemp);
     }
     public Serie(String titulo, int cantTemp, String descripcion, String creador, String genero){
         this.titulo = titulo;
@@ -22,6 +24,7 @@ public class Serie {
         this.descripcion = descripcion;
         this.creador = creador;
         this.genero = genero;
+        generarTemporadas(this.cantTemp);
     }
     // Metodos get
     public String getTitulo(){
@@ -45,6 +48,7 @@ public class Serie {
     }
     public void setCantTemp(int cantTemp){
         this.cantTemp = cantTemp;
+        generarTemporadas(this.cantTemp);
     }
     public void setDescripcion(String descripcion){
         this.descripcion = descripcion;
@@ -54,5 +58,11 @@ public class Serie {
     }
     public void setGenero(String genero){
         this.genero = genero;
+    }
+    //Otros
+    public void generarTemporadas(int cantTemp){
+        for(int i = 0; i < cantTemp; i++){
+            arrTemporadas[i] = new Temporada();
+        }
     }
 }

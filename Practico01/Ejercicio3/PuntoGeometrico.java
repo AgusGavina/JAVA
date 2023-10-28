@@ -1,4 +1,4 @@
-package Practico01;
+package Practico01.Ejercicio3;
 public class PuntoGeometrico{
     private int x, y;
     public PuntoGeometrico(){

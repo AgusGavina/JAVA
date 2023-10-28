@@ -1,4 +1,4 @@
-package Practico01;
+package Practico01.Ejercicio2;
 public class Electrodomestico {
     //Atributos
     private String nombre;
